@@ -1,24 +1,24 @@
 #include <stdio.h>
-#include "main.h"
 
 /**
-* print_number - Prints a number
-* @n: The number to print
-*/
-
-void print_number(int n)
+ * main - Write a program that computes and prints the sum of
+ * all the multiples of 3 or 5 below 1024 (excluded)
+ * i: Integer
+ * r: Result
+ * Return: On success 1.
+ *
+ */
+int main(void)
 {
-	unsigned int num = n;
+	int r = 0, i;
 
-	if (n < 0)
+	for (i = 1; i < 1024; i++)
 	{
-		putchar('-');
-		num = -num;
+		if (i % 3 == 0 || i % 5 == 0)
+		{
+			r = r + i;
+		}
 	}
-	if (num > 9)
-	{
-		print_number(num / 10);
-	}
-	putchar(num % 10 + '0');
+	printf("%d\n", r);
+	return (0);
 }
-
