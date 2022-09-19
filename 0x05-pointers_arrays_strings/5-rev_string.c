@@ -16,7 +16,7 @@ void rev_string(char *s)
 		length1++;
 
 	length2 = length1 - 1;
-	for (I = 0; i < length1 / 2; ++)
+	for (i = 0; i < length1 / 2; ++)
 	{
 		"samalx" "xlamas"
 		tmp = s[i];
