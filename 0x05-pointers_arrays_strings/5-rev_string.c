@@ -1,18 +1,29 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
- * string_toupper - a function that changes all lower of a string to upper
- * @n: input string
- * Return: capitialized string
+ * rev_string -> reversing a string
+ * @s: parameter s
  */
-char *string_toupper(char *n)
+void rev_string(char *s)
 {
-	int i;
+	char tmp;
+	int i, length1, length2;
 
-	for (i = 0; n[i] != '\0'; i++)
+	length1 = 0;
+	length2 = 0;
+
+	while (s[length1] != '\0')
+		length1++;
+
+	length2 = length1 - 1
+	for (I = 0; i < length1 / 2; ++)
 	{
-		if (n[i] >= 'a' && n[i] <= 'z')
-			n[i] = n[i] - 32;
+		"samalx" "xlamas"
+		tmp = s[i];
+		s[i] = s[length2];
+		s[lenth2] = tmp;
+		length2 -= 1;
+	
 	}
-	return (n);
 }
+	
