@@ -1,19 +1,25 @@
-#include "main.h"
-#include <string.h>
+#include "holberton.h"
 
 /**
- *
+ * puts_half - this function print only the even numbers.
+ * @str: is the principal parameter.
  */
-void puts2(char *str)
+void puts_half(char *str)
 {
-	int x, y; i;
+	int i, len, m;
 
-	x = strlen(str);
-	if (x % 2 == 1)
-		y = x / 2 + 1;
+	for (len = 0; str[len] != '\0'; len++)
+	{
+	}
+
+	if ((len  % 2) == 0)
+		m = (len / 2);
 	else
-		y = x / 2;
-	for (i = y; i < x; i ++)
+		m = (len + 1) / 2;
+
+	for (i = m; i < len; i++)
+	{
 		_putchar(str[i]);
+	}
 	_putchar('\n');
 }
