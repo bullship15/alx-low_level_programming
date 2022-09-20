@@ -1,23 +1,19 @@
-#include "string.h"
+#include "main.h"
 
 /**
- * puts_half - this function print only the even numbers.
- * @str: is the principal parameter.
+ * puts_half - prints the second half of the string
+ * @str: the string reference
+ * Return: 0
  */
+
 void puts_half(char *str)
 {
-	int i, len, m;
+	int i;
 
-	for (len = 0; str[len] != '\0'; len++)
-	{
-	}
-
-	if ((len  % 2) == 0)
-		m = (len / 2);
-	else
-		m = (len + 1) / 2;
-
-	for (i = m; i < len; i++)
+	for (i = 0; str[i] != '\0'; i++)
+		;
+	i++;
+	for (i /= 2; str[i] != '\0'; i++)
 	{
 		_putchar(str[i]);
 	}
