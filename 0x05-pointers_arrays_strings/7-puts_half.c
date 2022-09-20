@@ -1,4 +1,4 @@
-#include "main.h"
+#include "string.h"
 
 /**
  * puts_half - this function print only the even numbers.
